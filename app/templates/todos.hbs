@@ -1,1 +1,14 @@
-{{outlet}}
+<div class="row">
+   <div class="col-md-4">
+      {{#link-to 'todos.new' class="btn btn-success"}}
+      Create Todo
+      {{/link-to}}
+
+      <hr>
+
+      {{outlet}}
+   </div>
+
+   <div class="col-md-8">
+   </div>
+</div>
