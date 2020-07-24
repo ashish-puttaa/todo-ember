@@ -27,7 +27,7 @@
       {{#each todo in filteredTodos}}
       <div class="card p-3 mb-3">
          <div>
-            <h4 class="todo-heading float-left">{{todo.title}}</h4>
+            <h4 class="todo-heading float-left"> {{#link-to 'todos.edit' todo.id}} {{todo.title}} {{/link-to}} </h4>
             <span class="todo-date badge badge-primary float-right">{{format-date todo.date}}</span>
          </div>
          {{todo.body}}
@@ -38,7 +38,7 @@
       {{#each todo in sortedTodos}}
       <div class="card p-3 mb-3">
          <div>
-            <h4 class="todo-heading float-left">{{todo.title}}</h4>
+            <h4 class="todo-heading float-left"> {{#link-to 'todos.edit' todo.id}} {{todo.title}} {{/link-to}} </h4>
             <span class="todo-date badge badge-primary float-right">{{format-date todo.date}}</span>
          </div>
          {{todo.body}}
