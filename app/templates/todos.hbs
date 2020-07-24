@@ -30,7 +30,7 @@
             <h4 class="todo-heading float-left"> {{#link-to 'todos.edit' todo.id}} {{todo.title}} {{/link-to}} </h4>
             <span class="todo-date badge badge-primary float-right">{{format-date todo.date}}</span>
          </div>
-         {{todo.body}}
+         {{format-markdown todo.body}}
       </div>
       {{/each}}
 
@@ -41,7 +41,7 @@
             <h4 class="todo-heading float-left"> {{#link-to 'todos.edit' todo.id}} {{todo.title}} {{/link-to}} </h4>
             <span class="todo-date badge badge-primary float-right">{{format-date todo.date}}</span>
          </div>
-         {{todo.body}}
+         {{format-markdown todo.body}}
       </div>
       {{/each}}
       {{/if}}
